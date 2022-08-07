@@ -14,4 +14,4 @@ Database: Mongodb (Mongoose)
 4) npm start in both terminals and enjoy on localhost:3000
 
 
-![Alt text](preview.mp4) 
+![Alt text](Preview.mp4) 
