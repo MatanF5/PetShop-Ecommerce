@@ -6,7 +6,7 @@ import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-
+import Button from "../components/Button";
 const Container = styled.div``;
 const Title = styled.h1`
   display: flex;
@@ -21,6 +21,7 @@ const FilterContainer = styled.div`
 `;
 const Filter = styled.div`
   margin: 20px;
+  
 `;
 
 const FilterText = styled.span`
@@ -60,7 +61,7 @@ const ProductList = () => {
         <Filter>
           <FilterText>Filter Pets:</FilterText>
           <Select defaultValue="pet" name="type" onChange={handleFilters}>
-            <Option value= "pet" disabled >Pet Type</Option>
+            <Option value="pet" disabled >Pet Type</Option>
             <Option>dog</Option>
             <Option>cat</Option>
             <Option>duck</Option>
@@ -73,6 +74,8 @@ const ProductList = () => {
             <Option value="desc">Price (desc)</Option>
           </Select>
         </Filter>
+        <Button />
+
       </FilterContainer>
       <Products cat={cat} filters={filters} sort={sort} />
       <Newsletter />
